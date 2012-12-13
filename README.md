@@ -5,13 +5,14 @@ This makes <a href="https://github.com/kriszyp/promised-io">promised-io</a>'s wh
 
 <pre>
 var mypromise = MyPromise.getMyPromise();
-mypromise.doThis(someFunc(someVar));
 mypromise.ifSuccess(function(obj) {
     // code
 });
 mypromise.ifFail(function(obj) {
     // code
 });
+mypromise.doThis(someFunc(someVar));
+
 </pre>
 
 or
@@ -26,7 +27,8 @@ var failHandler = function(obj) {
     // code
 };
 
-mypromise.doThis(someFunc(someVar));
 mypromise.ifSuccess(successHandler);
 mypromise.ifFail(failHandler);
+mypromise.doThis(someFunc(someVar));
+
 </pre>
