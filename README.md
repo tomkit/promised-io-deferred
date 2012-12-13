@@ -5,22 +5,22 @@ This makes promised-io's whenPromise more similar to jQuery's deferred object sy
 
 mypromise.doThis(someFunc(someVar));
 <br/>mypromise.ifSuccess(function(obj) {
-<br/>    // code
+<br/><p/>// code
 <br/>});
 <br/>mypromise.ifFail(function(obj) {
-<br/>    // code
+<br/><p/>// code
 <br/>});
 
 or
 
-<br/>var successHandler = function(obj) {
-<br/>    // code
+var successHandler = function(obj) {
+<br/><p/>// code
 <br/>};
 
-<br/>var failHandler = function(obj) {
-<br/>    // code
+var failHandler = function(obj) {
+<br/><p/>// code
 <br/>};
 
-<br/>mypromise.doThis(someFunc(someVar));
+mypromise.doThis(someFunc(someVar));
 <br/>mypromise.ifSuccess(successHandler);
 <br/>mypromise.ifFail(failHandler);
