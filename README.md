@@ -5,30 +5,22 @@ This makes <a href="https://github.com/kriszyp/promised-io">promised-io</a>'s wh
 
 mypromise.doThis(someFunc(someVar));
 <br>mypromise.ifSuccess(function(obj) {
-<blockquote>
-// code
-</blockquote>
+<pre>    // code</pre>
 });
 <br>mypromise.ifFail(function(obj) {
-<blockquote>
-// code
-</blockquote>
+<pre>    // code</pre>
 });
 
 or
 
 var successHandler = function(obj) {
-<blockquote>
-// code
-</blockquote>
+<pre>    // code</pre>
 };
 
 var failHandler = function(obj) {
-<blockquote>
-// code
-</blockquote>
+<pre>    // code</pre>
 };
 
 mypromise.doThis(someFunc(someVar));
 <br>mypromise.ifSuccess(successHandler);
-<br>mypromise.ifFail(failHandler);
+<br>mypromise.ifFail(failHandler); 
