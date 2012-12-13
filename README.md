@@ -4,23 +4,23 @@ promised-io-deferred
 This makes promised-io's whenPromise more similar to jQuery's deferred object syntax:
 
 mypromise.doThis(someFunc(someVar));
-mypromise.ifSuccess(function(obj) {
-    // code
-});
-mypromise.ifFail(function(obj) {
-    // code
-});
+<br/>mypromise.ifSuccess(function(obj) {
+<br/>    // code
+<br/>});
+<br/>mypromise.ifFail(function(obj) {
+<br/>    // code
+<br/>});
 
 or
 
-var successHandler = function(obj) {
-    // code
-};
+<br/>var successHandler = function(obj) {
+<br/>    // code
+<br/>};
 
-var failHandler = function(obj) {
-    // code
-};
+<br/>var failHandler = function(obj) {
+<br/>    // code
+<br/>};
 
-mypromise.doThis(someFunc(someVar));
-mypromise.ifSuccess(successHandler);
-mypromise.ifFail(failHandler);
+<br/>mypromise.doThis(someFunc(someVar));
+<br/>mypromise.ifSuccess(successHandler);
+<br/>mypromise.ifFail(failHandler);
