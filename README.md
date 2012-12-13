@@ -1,25 +1,33 @@
 promised-io-deferred
 ====================
 
-This makes promised-io's whenPromise more similar to jQuery's deferred object syntax:
+This makes <a href="https://github.com/kriszyp/promised-io">promised-io</a>'s whenPromise more similar to jQuery's <a href="http://api.jquery.com/category/deferred-object/">deferred object</a> syntax:
 
 mypromise.doThis(someFunc(someVar));
 <br>mypromise.ifSuccess(function(obj) {
-<br><blockquote>// code</blockquote>
-<br>});
+<blockquote>
+// code
+</blockquote>
+});
 <br>mypromise.ifFail(function(obj) {
-<br><blockquote>// code</blockquote>
-<br>});
+<blockquote>
+// code
+</blockquote>
+});
 
 or
 
 var successHandler = function(obj) {
-<br><blockquote>// code</blockquote>
-<br>};
+<blockquote>
+// code
+</blockquote>
+};
 
 var failHandler = function(obj) {
-<br><blockquote>// code</blockquote>
-<br>};
+<blockquote>
+// code
+</blockquote>
+};
 
 mypromise.doThis(someFunc(someVar));
 <br>mypromise.ifSuccess(successHandler);
